@@ -1,0 +1,29 @@
+<html> 
+<head>
+<script language= "javascript" type="text/javascript">
+    function wybor() {
+       
+            let a = document.getElementById('t').value;
+            let b = a.length;
+            let suma = 0;
+            for (let i = 0; i < b; i++) {
+                
+                suma = suma + parseInt(a[i]);
+
+            }
+            console.log(suma/b);
+        }
+        
+    
+</script>
+</head>
+<body>
+    <div id = "liczby">
+       <input type="text" id = "t" onblur="wybor()"> </input>
+    </div>
+    <div id = "wynik">
+        <p id="w"></p>
+    </div>
+</body>
+
+</html>

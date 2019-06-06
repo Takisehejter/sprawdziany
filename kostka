@@ -1,0 +1,39 @@
+<html> 
+<head>
+
+</head>
+<body>
+    <div> 
+    
+    <button id = "lewo">lewo</button>
+    <button id = "prawo">prawo</button>
+    
+    </div>
+    <div id = "box" style = ""></div>
+    <div id = "ile"></div>
+
+
+    <script language= "javascript" type="text/javascript">
+  
+        let a = document.getElementById("lewo");
+        let b = document.getElementById("prawo");
+        let c = document.getElementById("box");
+        let d = document.getElementById("ile");
+        let przesun = 700;
+        let ile = 0;
+        a.addEventListener('click', function()  {
+            przesun-=50;
+            ile++;
+            c.innerHTML='<div id=\"lewo\" style=\"position: absolute; left:'+przesun+'px; width: 100px; height: 100px; background: blue;\"><div>'
+             d.innerHTML = ile;
+        })
+        b.addEventListener('click', function()  {
+            przesun+=50;
+            ile++;
+            c.innerHTML='<div id=\"lewo\" style=\"position: absolute; left:'+przesun+'px; width: 100px; height: 100px; background: blue;\"><div>'
+            d.innerHTML = ile;
+        })
+    </script>
+</body>
+
+</html>

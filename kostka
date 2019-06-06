@@ -22,16 +22,26 @@
         let przesun = 700;
         let ile = 0;
         a.addEventListener('click', function()  {
-            przesun-=50;
+           if (przesun > 0) {
+              przesun-=50;
             ile++;
             c.innerHTML='<div id=\"lewo\" style=\"position: absolute; left:'+przesun+'px; width: 100px; height: 100px; background: blue;\"><div>'
-             d.innerHTML = ile;
+             d.innerHTML = ile;  
+           }
+           else{
+                przesun=1900; 
+           }
         })
         b.addEventListener('click', function()  {
-            przesun+=50;
+             if (przesun < 1900) {
+              przesun+=50;
             ile++;
             c.innerHTML='<div id=\"lewo\" style=\"position: absolute; left:'+przesun+'px; width: 100px; height: 100px; background: blue;\"><div>'
-            d.innerHTML = ile;
+             d.innerHTML = ile;  
+           }
+           else{
+                przesun=0; 
+           }
         })
     </script>
 </body>
